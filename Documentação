@@ -1,0 +1,162 @@
+# Sistema de Funcionário em Go
+
+## Descrição
+
+Este projeto é um sistema simples de gerenciamento de funcionário desenvolvido em **Go (Golang)** com o objetivo de praticar os conceitos fundamentais da linguagem, principalmente o uso de ponteiros, funções, estruturas de controle (`for` e `switch`) e validação de dados.
+
+O sistema permite cadastrar e gerenciar informações de um funcionário diretamente pelo terminal.
+
+---
+
+## Objetivos do Projeto
+
+* Praticar o uso de ponteiros em Go.
+* Entender passagem de parâmetros por referência.
+* Aprender a modificar variáveis dentro de funções.
+* Desenvolver um sistema utilizando menu interativo.
+* Aplicar validações de dados.
+* Organizar o código em funções reutilizáveis.
+
+---
+
+## Funcionalidades
+
+* Alterar nome do funcionário.
+* Alterar cargo.
+* Alterar salário.
+* Aumentar salário por porcentagem.
+* Diminuir salário por porcentagem.
+* Exibir os dados do funcionário.
+* Limpar cadastro.
+* Validar salário negativo.
+* Validar porcentagens inválidas.
+* Menu interativo em modo console.
+
+---
+
+## Tecnologias Utilizadas
+
+* Go (Golang)
+* Terminal / Console
+
+---
+
+## Conceitos Praticados
+
+Durante o desenvolvimento foram utilizados os seguintes conceitos da linguagem Go:
+
+* Variáveis
+* Tipos primitivos (`string`, `int` e `float64`)
+* Funções
+* Ponteiros (`*`)
+* Operador de endereço (`&`)
+* Estrutura `switch`
+* Estrutura de repetição `for`
+* Condicionais (`if` e `else`)
+* Entrada de dados com `fmt.Scan`
+* Organização e separação de responsabilidades
+
+---
+
+## Funcionamento
+
+Ao iniciar o programa, o seguinte menu é exibido:
+
+```text
+1. Alterar Nome
+2. Alterar Cargo
+3. Alterar Salário
+4. Aumentar Salário (%)
+5. Diminuir Salário (%)
+6. Mostrar Funcionário
+7. Limpar Cadastro
+8. Sair
+```
+
+O usuário seleciona uma opção e o sistema executa a operação correspondente.
+
+As alterações são realizadas diretamente nas variáveis por meio de ponteiros.
+
+---
+
+## Validações
+
+### Alteração de salário
+
+* Não permite definir salário negativo.
+
+### Aumento de salário
+
+* Não permite informar porcentagem negativa.
+
+### Redução de salário
+
+* Não permite porcentagem negativa.
+* Não permite porcentagem igual ou superior a 100%.
+
+---
+
+## Exemplo de Utilização
+
+```text
+Sistema de Funcionário
+
+1. Alterar Nome
+2. Alterar Cargo
+3. Alterar Salário
+4. Aumentar Salário (%)
+5. Diminuir Salário (%)
+6. Mostrar Funcionário
+7. Limpar Cadastro
+8. Sair
+
+Escolha: 1
+
+Digite o nome:
+Matheus
+
+Nome alterado para: Matheus
+```
+
+---
+
+## Estrutura do Projeto
+
+```text
+.
+├── main.go
+└── README.md
+```
+
+---
+
+## Aprendizados
+
+Este projeto foi desenvolvido para consolidar conhecimentos sobre ponteiros em Go.
+
+Durante o desenvolvimento foram praticados:
+
+* Manipulação de variáveis por referência.
+* Criação de funções reutilizáveis.
+* Organização do código.
+* Tratamento de entradas inválidas.
+* Desenvolvimento de aplicações em modo console.
+
+---
+
+## Melhorias Futuras
+
+Como evolução do projeto, podem ser implementadas as seguintes funcionalidades:
+
+* Utilização de `struct` para representar o funcionário.
+* Criação de métodos associados à `struct`.
+* Cadastro de múltiplos funcionários utilizando slices.
+* Persistência de dados em arquivos JSON.
+* Persistência em banco de dados.
+* Desenvolvimento de uma API REST utilizando Go.
+
+---
+
+## Autor
+
+Desenvolvido por Natheus Bom como projeto de estudo da linguagem Go (Golang), com foco em ponteiros, funções e manipulação de dados.
